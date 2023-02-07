@@ -1,12 +1,9 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
 export default function GoodsItem(props) {
-    const {
-        mainId,
-        displayName,
-        displayDescription,
-        price,
-        granted,
-        addOrder = Function.prototype,
-    } = props;
+    const { mainId, displayName, displayDescription, price, granted } = props;
+    const { addOrder } = useContext(ShopContext);
     return (
         <div className='card'>
             <div className='card-image'>
@@ -16,7 +13,7 @@ export default function GoodsItem(props) {
                 />
             </div>
             <div className='card-content'>
-                <span className='card-title'>Card Title</span>
+                <span className='card-title'>{displayName}</span>
                 <p>{displayDescription}</p>
             </div>
             <div className='card-action'>
