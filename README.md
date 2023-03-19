@@ -1,3 +1,3 @@
 # Portofolio ReachShop
 
-[Demo](https://miropolsky.github.io/ReactShop/).
+[Demo](https://miropolsky.github.io/ReactShop/)
